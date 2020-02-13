@@ -75,6 +75,7 @@ cart[i][:price] = (cart[i][:price] - (cart[i][:price] * 0.20)).round(2)
 end
 cart
 end
+
 def checkout(cart, coupons)
   # Consult README for inputs and outputs
 
@@ -85,7 +86,6 @@ final_cart = apply_clearance(couponed_cart)
   # * consolidate_cart
   # * apply_coupons
   # * apply_clearance
-  final_cart = apply_clearance(couponed_cart)
   total = 0
   i = 0
   while i < final_cart.count
