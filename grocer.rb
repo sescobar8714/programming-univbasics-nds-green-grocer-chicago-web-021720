@@ -93,7 +93,7 @@ clearanced_cart = apply_clearance(couponed_cart)
     i += 1
   end
   if total > 100
-    total -= (total * 0.10)
+    total -= (total - 0.10)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
 end
